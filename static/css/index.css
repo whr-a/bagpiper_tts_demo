@@ -175,6 +175,46 @@ body {
     margin-bottom: 1.5rem;
 }
 
+.publication-acceptance {
+  display: inline-block;
+  margin-bottom: 1.75rem;
+  padding: 0.65rem 1.1rem;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--border-radius);
+  background: #eff6ff;
+  color: #1e40af;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.publication-acceptance strong {
+  color: inherit;
+  font-weight: 700;
+}
+
+.publication-authors .author-block {
+  white-space: nowrap;
+  line-height: 1.9;
+}
+
+.publication-authors sup,
+.publication-affiliations sup {
+  margin-left: 0.15em;
+  font-size: 0.7em;
+}
+
+.publication-affiliations {
+  color: #475569;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.affiliation-block {
+  display: inline-block;
+  margin: 0 0.65rem;
+}
+
 .publication-venue {
     color: var(--text-secondary);
     width: fit-content;
