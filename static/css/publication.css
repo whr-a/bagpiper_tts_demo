@@ -1,0 +1,73 @@
+/* Publication header and citation. Institution marks retain their own colors. */
+.publication-hero .hero-body { padding: 3.75rem 1.5rem 3.5rem; }
+.publication-hero .publication-title {
+  margin: 0 auto 1.75rem !important;
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  font-weight: 700 !important;
+  letter-spacing: -.035em;
+  line-height: 1.18 !important;
+  text-wrap: balance;
+}
+.publication-hero .publication-authors {
+  display: flex; flex-wrap: wrap; justify-content: center; gap: .18rem 1.05rem;
+  max-width: 850px; margin: 0 auto 1rem; font-size: 1.05rem; font-weight: 500;
+}
+.publication-hero .publication-authors .author-block { line-height: 1.85; }
+.publication-hero .publication-authors sup { color: #597087; margin-left: .18em; }
+.publication-hero .publication-affiliations { font-size: .88rem; line-height: 1.9; color: #5b6778; }
+.publication-affiliations p + p { display: flex; justify-content: center; gap: 1.6rem; flex-wrap: wrap; }
+.institution-logos {
+  display: flex; justify-content: center; align-items: center; flex-wrap: wrap;
+  gap: 2.8rem; margin: 1.85rem auto 2rem; min-height: 70px;
+}
+.institution-logos a { display: flex; align-items: center; justify-content: center; min-height: 68px; border-radius: 4px; }
+.institution-logos img { display: block; object-fit: contain; max-width: 100%; }
+.institution-cmu { display: flex; align-items: center; gap: 1rem; }
+.institution-logos .logo-cmu { width: 250px; height: auto; }
+.institution-logos .logo-lti { width: 70px; height: 67px; }
+.institution-logos .logo-ly { width: 170px; height: auto; }
+.institution-logos .logo-nvidia { width: 117px; height: 66px; }
+.publication-links { display: flex; flex-wrap: wrap; justify-content: center; gap: .65rem; }
+.resource-link {
+  display: inline-flex; justify-content: center; align-items: center; gap: .5rem;
+  min-height: 45px; padding: .65rem 1rem; background: #fff;
+  color: #344257; border: 1px solid #dce2ea; border-radius: 8px;
+  font-size: .9rem; font-weight: 600; transition: background .15s, border-color .15s;
+}
+.resource-link svg { width: 18px; height: 18px; }
+.resource-link .hf-icon { font-size: 19px; line-height: 1; }
+.resource-link:hover { background: #f5f8fc; border-color: #a8bad1; color: #17467f; }
+.resource-link-primary { background: #263d5d; border-color: #263d5d; color: #fff; }
+.resource-link-primary:hover { background: #17467f; color: #fff; }
+.publication-hero a:focus-visible, .citation-section a:focus-visible, .citation-copy:focus-visible {
+  outline: 3px solid #6495cc; outline-offset: 4px;
+}
+.citation-section { margin-top: 2rem; padding: 3.5rem 1.5rem 3rem; border-top: 1px solid #e5eaf0; background: #fafbfd; scroll-margin-top: 2rem; }
+.citation-heading { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.25rem; }
+.citation-kicker { color: #697b90; font-size: .72rem; font-weight: 700; letter-spacing: .14em; margin-bottom: .55rem; }
+.citation-heading .title { margin: 0; letter-spacing: -.03em; }
+.citation-heading .title::after { display: none; }
+.citation-summary { color: #5b6778; font-size: .96rem; line-height: 1.9; margin-bottom: 1.5rem; }
+.citation-summary strong { color: #344257; font-weight: 600; }
+.citation-summary a { display: inline-block; color: #315e96; }
+.citation-copy { flex-shrink: 0; padding: .65rem 1rem; border: 1px solid #ccd7e3; border-radius: 7px; background: white; color: #344257; font: inherit; font-size: .85rem; font-weight: 600; cursor: pointer; }
+.citation-copy:hover { border-color: #7d97b7; background: #f5f8fc; }
+pre.citation-code { background: #f1f4f8 !important; box-shadow: none; margin: 0; font-size: .79rem !important; line-height: 1.75; }
+.citation-code code { background: transparent !important; white-space: pre-wrap; overflow-wrap: anywhere; }
+.citation-status { min-height: 1.6em; font-size: .85rem; color: #315e96; margin-top: .6rem; }
+@media (max-width: 700px) {
+  .publication-hero .hero-body { padding: 2.5rem 1.25rem 2.75rem; }
+  .publication-hero .publication-authors { font-size: .95rem; gap: .18rem .9rem; }
+  .publication-hero .publication-affiliations { font-size: .8rem; margin: 0 auto; max-width: 345px; }
+  .institution-logos { gap: 1rem 2.2rem; max-width: 340px; margin: 1.35rem auto 1.6rem; }
+  .institution-cmu { flex-basis: 100%; justify-content: center; }
+  .institution-logos .logo-cmu { width: 220px; }
+  .institution-logos .logo-ly { width: 157px; }
+  .institution-logos .logo-nvidia { width: 104px; height: 59px; }
+  .publication-links { max-width: 340px; margin: 0 auto; }
+  .resource-link { flex: 1 1 calc(50% - .65rem); font-size: .82rem; padding: .65rem .7rem; }
+  .citation-section { padding: 2.5rem 1.25rem 2rem; }
+  .citation-heading { flex-wrap: wrap; }
+  pre.citation-code { padding: 1rem !important; font-size: .73rem !important; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

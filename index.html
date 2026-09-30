@@ -4,9 +4,27 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="title" content="Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis">
-  <meta name="description" content="Demo page for Bagpiper TTS system.">
-  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis. Accepted as an oral presentation at INTERSPEECH 2026. A collaboration between Carnegie Mellon University, LY Corporation, and NVIDIA Research.">
+  <meta name="author" content="Jinchuan Tian, Haoran Wang, Siddhant Arora, Takashi Maekaku, Keita Goto, Jin Sakuma, Yusuke Shinohara, Chao-Han Huck Yang, Shinji Watanabe">
+  <meta name="robots" content="index, follow">
   <meta name="language" content="English">
+  <meta name="citation_author" content="Jinchuan Tian">
+  <meta name="citation_author" content="Haoran Wang">
+  <meta name="citation_author" content="Siddhant Arora">
+  <meta name="citation_author" content="Takashi Maekaku">
+  <meta name="citation_author" content="Keita Goto">
+  <meta name="citation_author" content="Jin Sakuma">
+  <meta name="citation_author" content="Yusuke Shinohara">
+  <meta name="citation_author" content="Chao-Han Huck Yang">
+  <meta name="citation_author" content="Shinji Watanabe">
+  <meta name="citation_title" content="Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="Interspeech 2026">
+  <meta name="citation_firstpage" content="6658">
+  <meta name="citation_lastpage" content="6663">
+  <meta name="citation_doi" content="10.21437/Interspeech.2026-873">
+  <meta name="citation_pdf_url" content="https://www.isca-archive.org/interspeech_2026/tian26_interspeech.pdf">
+
 
   <title>Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis</title>
 
@@ -16,6 +34,7 @@
   <!-- Critical CSS -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/publication.css?v=2">
 
   <!-- Non-critical CSS -->
   <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -37,6 +56,7 @@
   <script defer src="static/js/bulma-carousel.min.js"></script>
   <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
+  <script defer src="static/js/publication.js"></script>
 </head>
 <body>
 
@@ -48,21 +68,51 @@
   <main id="main-content">
 
   <!-- Hero Section -->
-  <section class="hero">
+  <section class="hero publication-hero" aria-labelledby="paper-title">
     <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Anonymous Authors</span>
-            </div>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">Anonymous Institution</span>
-            </div>
-            <p style="margin-top: 1rem; color: #666; font-style: italic;">Under anonymous review</p>
-          </div>
+      <div class="container is-max-desktop has-text-centered">
+        <h1 class="publication-title" id="paper-title">Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis</h1>
+        <div class="publication-authors" aria-label="Authors">
+              <span class="author-block">Jinchuan Tian<sup>1</sup></span>
+              <span class="author-block">Haoran Wang<sup>1</sup></span>
+              <span class="author-block">Siddhant Arora<sup>1</sup></span>
+              <span class="author-block">Takashi Maekaku<sup>2</sup></span>
+              <span class="author-block">Keita Goto<sup>2</sup></span>
+              <span class="author-block">Jin Sakuma<sup>2</sup></span>
+              <span class="author-block">Yusuke Shinohara<sup>2</sup></span>
+              <span class="author-block">Chao-Han Huck Yang<sup>3</sup></span>
+              <span class="author-block">Shinji Watanabe<sup>1</sup></span>
         </div>
+        <div class="publication-affiliations" aria-label="Affiliations">
+          <p><sup>1</sup> Language Technologies Institute, Carnegie Mellon University</p>
+          <p><span><sup>2</sup> LY Corporation</span><span><sup>3</sup> NVIDIA Research</span></p>
+        </div>
+        <div class="institution-logos" aria-label="Research institutions">
+          <div class="institution-cmu">
+            <a href="https://www.cmu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Carnegie Mellon University">
+              <img class="logo-cmu" src="static/images/institutions/cmu-wordmark.png" alt="Carnegie Mellon University" width="400" height="37">
+            </a>
+            <a href="https://www.lti.cs.cmu.edu/" target="_blank" rel="noopener noreferrer" aria-label="Language Technologies Institute">
+              <img class="logo-lti" src="static/images/institutions/lti.png" alt="Language Technologies Institute" width="67" height="64">
+            </a>
+          </div>
+          <a href="https://www.lycorp.co.jp/en/" target="_blank" rel="noopener noreferrer" aria-label="LY Corporation">
+            <img class="logo-ly" src="static/images/institutions/ly-corporation.png" alt="LY Corporation" width="174" height="25">
+          </a>
+          <a href="https://www.nvidia.com/en-us/research/" target="_blank" rel="noopener noreferrer" aria-label="NVIDIA Research">
+            <img class="logo-nvidia" src="static/images/institutions/nvidia.svg" alt="NVIDIA" width="117" height="35">
+          </a>
+        </div>
+        <nav class="publication-links" aria-label="Paper resources">
+          <a class="resource-link resource-link-primary" href="https://www.isca-archive.org/interspeech_2026/tian26_interspeech.pdf" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M14 3H5v18h14V8zM14 3v5h5M8 12h8M8 16h6"/></svg> Paper
+          </a>
+          <a class="resource-link" href="https://huggingface.co/espnet/bagpiper-tts-sft" target="_blank" rel="noopener noreferrer"><span aria-hidden="true" class="hf-icon">🤗</span> Hugging Face</a>
+          <a class="resource-link" href="https://github.com/whr-a/bagpiper_tts_demo" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></svg> Demo source
+          </a>
+          <a class="resource-link" href="#citation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M10 7H4v6h6V7Zm0 6c0 4-2 5-5 5M20 7h-6v6h6V7Zm0 6c0 4-2 5-5 5"/></svg> Cite</a>
+        </nav>
       </div>
     </div>
   </section>
@@ -821,6 +871,36 @@
           </div>
         </div>
       </details>
+    </div>
+  </section>
+
+  <section class="section citation-section" id="citation" aria-labelledby="citation-title">
+    <div class="container is-max-desktop">
+      <div class="citation-heading">
+        <div>
+          <p class="citation-kicker">REFERENCE</p>
+          <h2 class="title is-3" id="citation-title">Cite this work</h2>
+        </div>
+        <button type="button" class="citation-copy" id="copy-citation" aria-label="Copy BibTeX citation">Copy BibTeX</button>
+      </div>
+      <p class="citation-summary">Jinchuan Tian et al. <strong>Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis.</strong><br>
+        In <em>Interspeech 2026</em>, pp. 6658–6663.
+        <a href="https://doi.org/10.21437/Interspeech.2026-873" target="_blank" rel="noopener noreferrer">doi:10.21437/Interspeech.2026-873 ↗</a> ·
+        <a href="https://www.isca-archive.org/interspeech_2026/tian26_interspeech.html" target="_blank" rel="noopener noreferrer">ISCA Archive ↗</a>
+      </p>
+      <pre class="citation-code"><code id="bibtex-code">@inproceedings{tian26_interspeech,
+  title     = {{Bagpiper-TTS: Natural Language Guided Universal Speech Synthesis}},
+  author    = {Jinchuan Tian and Haoran Wang and Siddhant Arora and
+               Takashi Maekaku and Keita Goto and Jin Sakuma and
+               Yusuke Shinohara and Chao-Han Huck Yang and Shinji Watanabe},
+  year      = {2026},
+  booktitle = {{Interspeech 2026}},
+  pages     = {6658--6663},
+  doi       = {10.21437/Interspeech.2026-873},
+  issn      = {2958-1796},
+  url       = {https://www.isca-archive.org/interspeech_2026/tian26_interspeech.html}
+}</code></pre>
+      <p class="citation-status" id="citation-status" role="status" aria-live="polite"></p>
     </div>
   </section>
 
